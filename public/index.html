@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Hello Victoria</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    button { padding: 8px 12px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1 id="title">Hello, Victoria!</h1>
+  <p id="count">0</p>
+  <button id="btn">Increment</button>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const count = document.getElementById('count');
+    btn.addEventListener('click', () => {
+      count.textContent = String(Number(count.textContent) + 1);
+    });
+  </script>
+</body>
+</html>
